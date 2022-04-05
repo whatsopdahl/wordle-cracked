@@ -1,0 +1,27 @@
+{
+    "name": "Wordle Cracked",
+    "version": "0.0.4",
+    "manifest_version": 3,
+    "description": "Reveal the answer to the wordle",
+    "content_scripts": [
+        {
+            "matches": ["https://www.nytimes.com/games/wordle/*"],
+            "css": ["cracked.css"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [{
+        "resources": ["reveal.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "icons": {
+        "16": "/img/WordleCracked_16x16.png",
+        "32": "/img/WordleCracked_32x32.png",
+        "48": "/img/WordleCracked_48x48.png",
+        "128": "/img/WordleCracked_128x128.png"
+    }
+}

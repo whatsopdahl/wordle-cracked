@@ -1,0 +1,19 @@
+.wordle-answer {
+    border: 2px solid black;
+    background-color: #fff;
+    border-radius: 4px;
+    color: black;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.wordle-answer:hover {
+    border: 2px solid #fff;
+    background-color: black;
+    border-radius: 4px;
+    color: #fff;
+}
